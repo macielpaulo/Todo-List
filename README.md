@@ -4,16 +4,6 @@ Aplicação fullstack de lista de tarefas (**Todo List**), construída com uma A
 
 ---
 
-## 📚 Documentação relacionada
-
-- **[Backend — Controller > Service > Repository](./arquitetura.md)**
-- **[Frontend — React, Vite e Tailwind CSS](./arquitetura-frontend.md)**
-
-> [!NOTE]
-> Os arquivos de arquitetura são mantidos para consulta local (Obsidian) e não são versionados — veja a seção [Boas práticas](#-boas-práticas).
-
----
-
 ## 🚀 Tecnologias utilizadas
 
 ### Backend
@@ -61,9 +51,7 @@ todo-list/
 │       ├── App.tsx        # Componente principal
 │       ├── main.tsx       # Bootstrap do React
 │       └── index.css      # Estilos globais + Tailwind
-├── docker-compose.yml     # Banco de dados PostgreSQL
-├── arquitetura.md         # Documentação do backend
-└── arquitetura-frontend.md# Documentação do frontend
+└── docker-compose.yml     # Banco de dados PostgreSQL
 ```
 
 ---
@@ -179,7 +167,6 @@ A interface sobe em **http://localhost:5173** (porta padrão do Vite).
 - **Injeção de dependência** com **tsyringe**, facilitando o desacoplamento e a substituição de implementações (ex.: mocks em testes).
 - **DTOs** para trafegar dados entre as camadas, evitando expor as entidades diretamente.
 - **Frontend desacoplado do banco**: a interface conversa apenas com a API REST, nunca com o banco de dados.
-- Detalhes completos em [arquitetura.md](./arquitetura.md) e [arquitetura-frontend.md](./arquitetura-frontend.md).
 
 ### Versionamento (Git)
 - **Não versionar dependências nem artefatos de build**: `node_modules/`, `dist/` e `build/` estão no `.gitignore`.
