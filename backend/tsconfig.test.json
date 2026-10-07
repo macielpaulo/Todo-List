@@ -1,0 +1,10 @@
+{
+  // Configuracao usada apenas para checagem de tipos dos testes (os testes sao
+  // transpilados pelo SWC via Jest; este tsconfig serve para `tsc --noEmit`).
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": ["jest", "node"]
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
