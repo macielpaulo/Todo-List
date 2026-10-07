@@ -1,5 +1,4 @@
-import React from 'react';
-import { Task } from '../types/Task';
+import type { Task } from '../types/Task';
 import { TodoItem } from './TodoItem';
 
 interface TodoListProps {

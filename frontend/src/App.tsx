@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { api } from './services/api';
-import { Task } from './types/Task';
+import type { Task } from './types/Task';
 import { AddTodo } from './components/AddTodo';
 import { TodoList } from './components/TodoList';
 
